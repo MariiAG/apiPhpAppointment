@@ -34,7 +34,7 @@ if($_POST['METHOD']=='PUT'){
     $id=$_GET['id'];
     $day=$_POST['day'];
     $place=$_POST['place'];
-    $query="UPDATE dateday SET dateday='$dateday', place='$place' WHERE id='$id'";
+    $query="UPDATE dateday SET day='$day', place='$place' WHERE id='$id'";
     $result=methodPut($query);
     echo json_encode($result);
     header("HTTP/1.1 200 OK");
